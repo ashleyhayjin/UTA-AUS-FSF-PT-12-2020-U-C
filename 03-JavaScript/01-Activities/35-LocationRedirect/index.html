@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    console.log(window.navigator.userAgent);
+    if (window.navigator.userAgent.includes("Mac")) {
+        alert("Welcome Mac User");    
+    } else if (window.navigator.userAgent.includes("Windows")) {
+        alert("Welcome Windows User!");
+    } 
+
+    var usersPosition;
+
+    var successFn= function (position) {
+        usersPosition = position;
+        console.log('Success!:', position);
+    };
+
+    var errFn = function (err) {
+        console.log('Error!: ', err);
+    };
+
+
+    console.log(window.navigator.geolocation.getCurrentPosition(successFn, errFn));
+
+    if (usersPosition > -97) {
+        window.location.replace("http://www.google.com");
+    } else {
+        window.location.replace("http://www.youtube.com");
+    }
+    </script>  
+</body>
+</html>
