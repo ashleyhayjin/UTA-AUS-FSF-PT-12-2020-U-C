@@ -27,6 +27,8 @@ function prepareRead() {
 
 function speedRead() {
   //Add Your Code Here
+  timeEl.textContent = "";
+  var mai
 }
 
 prepareRead();

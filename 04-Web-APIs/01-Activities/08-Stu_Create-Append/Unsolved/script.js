@@ -35,4 +35,8 @@ nameEl.setAttribute("style", "font-size:25px; text-align:center;");
 kittenEl.setAttribute("style", "font-size:25px; text-align:center;");
 favoriteEl.setAttribute("style", "font-size:20px;");
 
-// TODO: Add ordered list items containing four favorite foods
+// TODO: Add ordered list items containing four favorite foodsfor 
+for(var i = 0; i < listEl.length; i++){
+    listEl.appendChild[i];
+}
+
