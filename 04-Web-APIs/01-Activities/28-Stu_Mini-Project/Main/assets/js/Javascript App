@@ -1,0 +1,36 @@
+Javascript App
+
+1. When you press the start button the game will start.
+////////
+
+2. The timer will start as soon as you press the start button. 
+(Interval) /////
+
+
+3. User will input random characters into the game.
+(input would be store in a variable)
+
+
+
+4. There will be a list of strings.
+(Create an array of the different string options)
+(Random - Math.random)
+
+
+5. The game will store the letters that match the string of the word. 
+(Conditionals)
+
+
+6. If the timer reaches 0 then the game ends 
+
+(Conditionals)
+
+7. If the user didn't win then the game will add a loss
+
+
+
+8. If the user is able to identify all the correct characters within 10 seconds then the user wins the game and there is a number added to the wins.
+
+
+
+9. Everytime you press start the input resets but the wins and losses are kept into localstorage(?)
