@@ -66,9 +66,12 @@
             $(".btn-choice").on("click", function() {
 
               console.log("You clicked a button!!");
-
-              // Add code to have the computer guess a random number between 1 and 4
+              
+              var computerPick = Math.floor(Math.random()* 4) + 1;
+              console.log(computerPick);
               // Then determine which button was clicked
+
+
               // Compare the computer and user guess
               // Inform the user if the've guessed correctly or incorrectly
 
