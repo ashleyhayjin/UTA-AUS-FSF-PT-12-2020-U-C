@@ -48,7 +48,7 @@
               <button class="btn btn-primary btn-lg grow-button">
                 <span class="fa fa-plus"></span> Grow</button>
               <button class="btn btn-danger btn-lg shrink-button">
-                <span class="fa fa-minus"></span> Shrink</button>
+                <span class="fa fa-minus"></span> Shrink</button>  
             </div>
           </div>
         </div>
@@ -84,8 +84,30 @@
                 <span class="fa fa-comment"></span> Go Planet!</button>
             </div>
           </div>
+          <div id="sizeControls" class="card">
+            <h4 class="card-header">Stretch</h4>
+            <div class="card-body">
+              <div class="text-center">
+                <button class="btn btn-dark btn-lg normal-button-2">
+                  <span class="fa fa-ok"></span> Normal</button>
+                <button class="btn btn-primary btn-lg stretch-button">
+                  <span class="fa fa-plus"></span> Grow</button>
+              </div>
+              
+           </div>
+           <div id="sizeControls" class="card">
+            <h4 class="card-header">Aqua</h4>
+            <div class="card-body">
+              <div class="text-center">
+                <button class="btn btn-dark btn-lg normal-button-3">
+                  <span class="fa fa-ok"></span> Normal</button>
+                <button class="btn btn-primary btn-lg aqua-button">
+                  <span class="fa fa-plus"></span> Aqua Bomb</button>
+              </div>
+          </div>
         </div>
       </div>
+      
 
       <!-- Right Card (Captain Planet Hero)-->
       <div class="col-lg-6">
@@ -125,6 +147,12 @@
     $(".shrink-button").on("click", function() {
       captainPlanet.animate({ height: "100px" });
     });
+    $(".stretch-button").on("click", function () {
+      captainPlanet.animate({ width: "1000px"});
+    });
+    $(".normal-button-2").on("click", function () {
+      captainPlanet.animate({ width: "500px"});
+    });
 
     // Visibility Buttons
     $(".vis-button").on("click", function() {
@@ -150,7 +178,7 @@
     $(".back-button").on("click", function() {
       captainPlanet.animate({ top: "50px", left: "80px" }, "fast");
     });
-
+ 
     // Keyboard move controls
     $(document).keyup(function(e) {
       switch (e.which) {

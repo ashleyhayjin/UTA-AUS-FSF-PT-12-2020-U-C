@@ -80,14 +80,28 @@
 
       // 6. Finally, append each "letterBtn" to the "#buttons" div (provided).
 
+        for (var i = 0; i < letters.length; i++) {
+
+          var letterBtn = $("<button>");
+          letterBtn.addClass("letter-button letter letter-button-color");
+          letterBtn.attr("data-letter", letters[i]);
+          letterBtn.text(letters[i]);
+          $("#buttons").append(letterBtn);
+        }  
       // Be sure to test that your code works for this major task, before proceeding to the next one!
 
       // MAJOR TASK #2: ATTACH ON-CLICK EVENTS TO "LETTER" BUTTONS
       // =================================================================================
 
       // 7. Create an "on-click" event attached to the ".letter-button" class.
-
-      // Inside the on-click event...
+      
+      // $(".letter-button").on("click", function() {
+      //   var fridgeMagnet = $("<div>");
+      //   fridgeMagnet.addClass("letter fridge-color");
+      //   fridgeMagnet.text($(this).attr("data-letter"));
+      //   fridgeMagnet.append($("#display"))
+      // });
+      // // Inside the on-click event...
 
       // 8. Create a variable called "fridgeMagnet" and set the variable equal to a new div.
 
