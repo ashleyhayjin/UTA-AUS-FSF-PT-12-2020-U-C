@@ -1,3 +1,4 @@
+npm t
 const Child = require("../child");
 
 describe("Child", () => {

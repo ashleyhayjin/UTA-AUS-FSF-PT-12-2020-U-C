@@ -1,13 +1,17 @@
 const apiCallDurations = [3000, 4000, 5000, 6000];
 const maxDuration = 9999;
 
-const callAPI = (duration) =>
+const callAPI = (duration) => {
   new Promise((resolve, reject) => {
     setTimeout(() => {
       // TODO: If the duration is longer than maxDuration, reject() the promise
-      // TODO: Otherwise resolve() the promise
-    }, duration);
-  });
+      if (duration > maxDuration){
+        reject(new Error('Something went wrong'));
+      } else {
+          resolve('Resolved after 1 second');
+       });
+  })
+};     
 
 const promises = [];
 

@@ -7,6 +7,8 @@ describe("DayCare", () => {
       const dayCare = new DayCare();
 
       // TODO: Add a comment describing the purpose of the following statement
+      // Daycare cannot exceed 3 children who are <= 6 years.
+      
       expect(dayCare).toEqual({ children: [], capacity: 3, ageLimit: 6 });
     });
   });

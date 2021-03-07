@@ -92,7 +92,7 @@ describe("DayCare", () => {
       const child1 = new Child("Tammy", 1);
       const child2 = new Child("Mark", 2);
       const child3 = new Child("Alvin", 1);
-      const mock = jest.spyOn();
+      const mock = jest.spyOn(console, "log");
       dayCare.children = [child1, child2, child3];
       mock.mockImplementation();
       const removed = dayCare.pickupChild("Fred");

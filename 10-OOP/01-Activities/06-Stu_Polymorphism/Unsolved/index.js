@@ -14,6 +14,23 @@ function Student(first, last, age) {
     }
     let response;
     // Return a letter grade if a number grade was passed
+
+    switch(grade) {
+      case grade >= 90 :
+        console.log("A")
+        break;
+      case grade >= 80 && input < 90 :
+        console.log("B")
+        break;
+      case grade >= 70 && input < 80 :
+        console.log("C")
+        break;
+      case input < 70 :
+        console.log("You failed")
+        break;
+      default:
+        console.log("You need to insert a grade")
+    }
     // Ex. 95 => 'A'
     if (typeof input === 'number') {
       // TODO: Add logic here to return a single letter grade
