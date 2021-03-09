@@ -1,5 +1,5 @@
 // TODO: Import the parent class
-
+const 
 // TODO: Create a `Boat` class that extends the `Vehicle` class
 
 const boatPassengers = [
