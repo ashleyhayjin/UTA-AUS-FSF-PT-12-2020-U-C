@@ -15,16 +15,21 @@ User.init(
     },
     username: {
       type: DataTypes.STRING,
+      allowNull: false,
+      isAlphanumeric: true,
     },
     email: {
       type: DataTypes.STRING,
       unique: true,
+      allowNull: false,
       validate: {
         isEmail: true,
       },
     },
     password: {
+      allowNull: false,
       type: DataTypes.STRING,
+      len: [8],
     },
   },
   {
