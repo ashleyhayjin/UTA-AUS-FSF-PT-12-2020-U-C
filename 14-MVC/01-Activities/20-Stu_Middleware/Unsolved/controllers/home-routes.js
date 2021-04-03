@@ -31,7 +31,7 @@ router.get('/', withAuth, async (req, res) => {
 
 // GET one gallery
 // TODO: Replace the logic below with the custom middleware
-router.get('/gallery/:id', withAuth, async (req, res) => {
+router.get('/gallery/:id', async (req, res) => {
   // If the user is not logged in, redirect the user to the login page
   if (!req.session.loggedIn) {
     res.redirect('/login');
