@@ -1,7 +1,6 @@
 {
   "name": "wordguess",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index",
@@ -11,10 +10,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^2.4.1",
-    "inquirer": "^6.2.1"
+    "chalk": "^2.4.2",
+    "inquirer": "^6.5.2"
   },
   "devDependencies": {
-    "jest": "^24.8.0"
-  }
+    "jest": "^24.9.0"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "keywords": [],
+  "description": ""
 }

@@ -4,4 +4,11 @@ module.exports = {
   },
   // TODO: Create a custom helper 'format_date' that takes in a timestamp,
   // adds five years to the date, and formats it as M/D/YYYY
+format_date: (date) => {
+  newDate = date.toLocaleTimeString();
+  return newDate;
+  console.log("new", newDate);
+
+}
+
 };

@@ -6,7 +6,7 @@ class Letter {
     this.visible = !/[a-z1-9]/i.test(char);
     this.char = char;
   }
-
+}
   // Returns either an underscore or the underlying character depending on `this.visible`
   //    because we call this function toString, when we call `this.letters.join` in
   //    Word.js, JavaScript automatically uses the value we return here
@@ -31,6 +31,6 @@ class Letter {
     // Otherwise return false
     return false;
   }
-}
+
 
 module.exports = Letter;

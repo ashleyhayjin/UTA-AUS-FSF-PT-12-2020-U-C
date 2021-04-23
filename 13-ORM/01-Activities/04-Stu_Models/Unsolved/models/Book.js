@@ -28,7 +28,8 @@ Book.init(
     sequelize,
     timestamps: false,
     underscored: true,
-    modelName: 'book'
+    modelName: 'book',
+    freezeTableName: true
   }
 );
 
